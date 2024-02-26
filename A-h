@@ -1,4 +1,4 @@
- DDL
+                                   DDL
 
 1. create table Employee(Emp_no int primary key,E_name varchar(50) not null,E_address varchar(100),E_ph_no varchar(12),Dept_name varchar(20),job_id int,salary decimal(10,2));
 Query OK, 0 rows affected (0.15 sec)
@@ -62,7 +62,7 @@ mysql> select * from department;
 +--------+-----------+
 5 rows in set (0.00 sec)
 
-2.  UPDATE Employee SET E_name = 'UpdatedName' WHERE Emp_no = 202;
+2.  UPDATE Employee SET E_name = 'Jose' WHERE Emp_no = 202;
 Query OK, 1 row affected (0.03 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
 
@@ -71,7 +71,7 @@ mysql> select * from Employee;
 | Emp_no | E_name      | salary   |
 +--------+-------------+----------+
 |    201 | John        | 50000.00 |
-|    202 | UpdatedName | 60000.00 |
+|    202 | Jose        | 60000.00 |
 |    203 | Bob         | 55000.00 |
 |    204 | Charlie     | 70000.00 |
 |    205 | David       | 10000.00 |
@@ -86,7 +86,7 @@ ERROR 1054 (42S22): Unknown column 'E_name' in 'where clause'
 | ename       | sal      |
 +-------------+----------+
 | John        | 50000.00 |
-| UpdatedName | 60000.00 |
+| Jose        | 60000.00 |
 | Bob         | 55000.00 |
 | Charlie     | 70000.00 |
 | David       | 10000.00 |
@@ -100,7 +100,7 @@ mysql> select  * from Employee;
 | Emp_no | E_name      | salary   |
 +--------+-------------+----------+
 |    201 | John        | 50000.00 |
-|    202 | UpdatedName | 60000.00 |
+|    202 | Jose        | 60000.00 |
 |    203 | Bob         | 55000.00 |
 |    204 | Charlie     | 70000.00 |
 |    205 | David       | 10000.00 |
@@ -175,7 +175,7 @@ mysql> select * from Employee;
 |      5 | Jane Smit   | 60000.00 |
 |      6 | Bo Johnson  | 55000.00 |
 |    201 | John        | 50000.00 |
-|    202 | UpdatedName | 60000.00 |
+|    202 | Jose        | 60000.00 |
 |    203 | Bob         | 55000.00 |
 |    204 | Charlie     | 70000.00 |
 |    205 | David       | 50000.00 |
@@ -193,7 +193,7 @@ mysql> select * from Employee;
 |      2 | Jane Smith  | 60000.00 |
 |      3 | Bob Johnson | 55000.00 |
 |    201 | John        | 50000.00 |
-|    202 | UpdatedName | 60000.00 |
+|    202 | Jose        | 60000.00 |
 |    203 | Bob         | 55000.00 |
 |    204 | Charlie     | 70000.00 |
 |    205 | David       | 50000.00 |
@@ -218,7 +218,7 @@ mysql> select * from Employee;
 |      5 | Jane Smit   | 60000.00 |
 |      6 | Bo Johnson  | 55000.00 |
 |    201 | John        | 50000.00 |
-|    202 | UpdatedName | 60000.00 |
+|    202 | Jose        | 60000.00 |
 |    203 | Bob         | 55000.00 |
 |    204 | Charlie     | 70000.00 |
 |    205 | David       | 50000.00 |
@@ -239,7 +239,7 @@ mysql> select * from Employee;
 |      5 | Jane Smit   | 60000.00 |
 |      6 | Bo Johnson  | 55000.00 |
 |    201 | John        | 50000.00 |
-|    202 | UpdatedName | 60000.00 |
+|    202 | Jose        | 60000.00 |
 |    203 | Bob         | 55000.00 |
 |    204 | Charlie     | 70000.00 |
 |    205 | David       | 50000.00 |
